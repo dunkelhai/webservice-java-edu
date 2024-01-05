@@ -18,10 +18,8 @@ public class DAOEstacionamento {
 	public int getVagasOcupadas() {
 		Connection conexao = getConnection();
 		String cmd = EstacionamentoUtil.get("selectOcupadas");
-
 		try (PreparedStatement pStmt = conexao.prepareStatement(cmd)) {
 			ResultSet result = pStmt.executeQuery();
-
 			if (result.next()) {
 				int ocupadas = result.getInt(1);
 				return ocupadas;
@@ -31,7 +29,6 @@ public class DAOEstacionamento {
 		} finally {
 			closeConnection(conexao);
 		}
-
 		return 0;
 	}
 
@@ -40,7 +37,6 @@ public class DAOEstacionamento {
 		String usuario = EstacionamentoUtil.get("usuarioBanco");
 		String senha = EstacionamentoUtil.get("senhaBanco");
 		Connection con = null;
-
 		try {
 			con = DriverManager.getConnection(url, usuario, senha);
 		} catch (SQLException e) {

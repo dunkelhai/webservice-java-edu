@@ -16,7 +16,6 @@ public class EstacionamentoUtil {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 		return null;
 	}
 	

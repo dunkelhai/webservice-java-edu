@@ -7,7 +7,6 @@ import impacta.ead.jp.estacionamento.persistencia.DAOEstacionamento;
  * e eventos do sistema.
  */
 public class EstacionamentoController {
-	
 
 	/**
 	 * Recupera o status das vagas do estacionamento  
@@ -18,7 +17,4 @@ public class EstacionamentoController {
 		return new DAOEstacionamento().getVagasOcupadas();
 	}
 
-
-
-	
 }
