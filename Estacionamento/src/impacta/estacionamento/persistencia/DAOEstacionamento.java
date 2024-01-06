@@ -1,4 +1,4 @@
-package impacta.ead.jp.estacionamento.persistencia;
+package impacta.estacionamento.persistencia;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
-import impacta.ead.jp.estacionamento.utilitario.EstacionamentoUtil;
+import impacta.estacionamento.utilitario.EstacionamentoUtil;
 
 /**
  * Classe que realiza o mapeamento objeto-relacional e consultas relacionadas

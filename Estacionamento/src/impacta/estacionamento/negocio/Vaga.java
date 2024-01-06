@@ -1,6 +1,6 @@
-package impacta.ead.jp.estacionamento.negocio;
+package impacta.estacionamento.negocio;
 
-import impacta.ead.jp.estacionamento.controle.EstacionamentoController;
+import impacta.estacionamento.controle.EstacionamentoController;
 
 /**
  * Representa o conceito de vaga do estacionamento.

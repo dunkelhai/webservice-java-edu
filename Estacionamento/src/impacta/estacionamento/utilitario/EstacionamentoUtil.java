@@ -1,4 +1,4 @@
-package impacta.ead.jp.estacionamento.utilitario;
+package impacta.estacionamento.utilitario;
 
 import java.io.IOException;
 import java.time.LocalDateTime;

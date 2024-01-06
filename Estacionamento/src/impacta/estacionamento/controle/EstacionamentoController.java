@@ -1,6 +1,6 @@
-package impacta.ead.jp.estacionamento.controle;
+package impacta.estacionamento.controle;
 
-import impacta.ead.jp.estacionamento.persistencia.DAOEstacionamento;
+import impacta.estacionamento.persistencia.DAOEstacionamento;
 
 /**
  * Classe controladora que coordena todo o fluxo da informação
