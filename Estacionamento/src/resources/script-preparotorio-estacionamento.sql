@@ -21,5 +21,4 @@ insert into tb_movimentacao (placa,data_entrada,data_saida,valor)  values  ('LLL
 insert into tb_status_vagas(id,ocupadas) values (1,35);
 
 SELECT * FROM tb_movimentacao tm;
-
 SELECT * FROM tb_status_vagas tsv;
