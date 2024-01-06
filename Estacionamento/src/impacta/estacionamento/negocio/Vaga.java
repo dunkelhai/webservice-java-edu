@@ -4,18 +4,18 @@ import impacta.estacionamento.controle.EstacionamentoController;
 
 /**
  * Representa o conceito de vaga do estacionamento.
- * 
+ *
  * As vagas do estacionamento não são identificadas, sendo, em teoria, semelhantes entre si.
- * 
+ *
  * Esta classe possui a informação de total de vagas do estacionamento, bem como a 
  * quantidade de vagas ocupadas até o momento presente.
- * 
+ *
  */
 public class Vaga {
-	
+
 	public static int TOTAL_VAGAS = 100;
 	private static int vagasOcupadas = inicializaVagasOcupadas();
-	
+
 	private static int inicializaVagasOcupadas(){
 		int ocupadas = EstacionamentoController.inicializarVagasOcupadas();
 		return ocupadas;

@@ -20,14 +20,14 @@ public class EstacionamentoController {
 	}
 
 	public StatusBean getStatusDia() {
-	StatusBean bean = null;
+		StatusBean bean = null;
 
-	int livres = Vaga.livres();
-	int ocupadas = Vaga.getOcupadas();
-	double faturamento = new DAOEstacionamento().getFaturamentoCorrente();
+		int livres = Vaga.livres();
+		int ocupadas = Vaga.getOcupadas();
+		double faturamento = new DAOEstacionamento().getFaturamentoCorrente();
 
-	bean = new StatusBean(livres, ocupadas, faturamento);
+		bean = new StatusBean(livres, ocupadas, faturamento);
 
-	return bean;
+		return bean;
 	}
 }
