@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Estacionamento/Estacionamento.iml" filepath="$PROJECT_DIR$/Estacionamento/Estacionamento.iml" />
       <module fileurl="file://$PROJECT_DIR$/webservice-java-edu.iml" filepath="$PROJECT_DIR$/webservice-java-edu.iml" />
     </modules>
   </component>
