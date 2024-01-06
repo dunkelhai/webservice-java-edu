@@ -55,4 +55,24 @@ public class DAOEstacionamento {
 		}
 	}
 
+	public double getFaturamentoCorrente() {
+
+		Connection conexao = getConnection();
+		String cmd = EstacionamentoUtil.get("selectSituacaoAtual");
+
+		try (PreparedStatement pStmt = conexao.prepareStatement(cmd)) {
+			ResultSet result = pStmt.executeQuery();
+
+			if (Optional.ofNullable(result.next()).orElse(false)) {
+				double faturamento = result.getDouble(1);
+				return faturamento;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage().toLowerCase());
+		} finally {
+			closeConnection(conexao);
+		}
+		return 0;
+	}
 }

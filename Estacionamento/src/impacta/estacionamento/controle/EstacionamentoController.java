@@ -1,5 +1,7 @@
 package impacta.estacionamento.controle;
 
+import impacta.estacionamento.integracao.StatusBean;
+import impacta.estacionamento.negocio.Vaga;
 import impacta.estacionamento.persistencia.DAOEstacionamento;
 
 /**
@@ -17,4 +19,15 @@ public class EstacionamentoController {
 		return new DAOEstacionamento().getVagasOcupadas();
 	}
 
+	public StatusBean getStatusDia() {
+	StatusBean bean = null;
+
+	int livres = Vaga.livres();
+	int ocupadas = Vaga.getOcupadas();
+	double faturamento = new DAOEstacionamento().getFaturamentoCorrente();
+
+	bean = new StatusBean(livres, ocupadas, faturamento);
+
+	return bean;
+	}
 }
