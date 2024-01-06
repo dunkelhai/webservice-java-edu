@@ -17,20 +17,25 @@ import impacta.estacionamento.utilitario.EstacionamentoUtil;
 public class DAOEstacionamento {
 
 	public int getVagasOcupadas() {
+
 		Connection conexao = getConnection();
 		String cmd = EstacionamentoUtil.get("selectOcupadas");
+
 		try (PreparedStatement pStmt = conexao.prepareStatement(cmd)) {
 			ResultSet result = pStmt.executeQuery();
+
 			if (Optional.ofNullable(result.next()).orElse(false)) {
 				int ocupadas = result.getInt(1);
 				return ocupadas;
 			}
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage().toLowerCase());
 		} finally {
 			closeConnection(conexao);
 		}
+
 		return 0;
 	}
 
@@ -48,6 +53,7 @@ public class DAOEstacionamento {
 	}
 
 	private static void closeConnection(Connection con) {
+
 		try {
 			con.close();
 		} catch (SQLException e) {
@@ -73,6 +79,7 @@ public class DAOEstacionamento {
 		} finally {
 			closeConnection(conexao);
 		}
+
 		return 0;
 	}
 }
