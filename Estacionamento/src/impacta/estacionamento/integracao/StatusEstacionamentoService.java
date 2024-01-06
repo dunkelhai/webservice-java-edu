@@ -1,4 +1,4 @@
-package impacta.estacionamento.apresentacao;
+package impacta.estacionamento.integracao;
 
 import impacta.estacionamento.integracao.StatusBean;
 
