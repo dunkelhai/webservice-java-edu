@@ -13,6 +13,4 @@ public interface StatusEstacionamentoService {
 
     @WebMethod
     public StatusBean getStatus();
-
-
 }
