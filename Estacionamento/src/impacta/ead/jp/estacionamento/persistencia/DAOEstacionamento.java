@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Optional;
 
 import impacta.ead.jp.estacionamento.utilitario.EstacionamentoUtil;
 
@@ -20,12 +21,13 @@ public class DAOEstacionamento {
 		String cmd = EstacionamentoUtil.get("selectOcupadas");
 		try (PreparedStatement pStmt = conexao.prepareStatement(cmd)) {
 			ResultSet result = pStmt.executeQuery();
-			if (result.next()) {
+			if (Optional.ofNullable(result.next()).orElse(false)) {
 				int ocupadas = result.getInt(1);
 				return ocupadas;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			System.out.println(e.getMessage().toLowerCase());
 		} finally {
 			closeConnection(conexao);
 		}
