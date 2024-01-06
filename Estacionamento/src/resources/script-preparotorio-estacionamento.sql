@@ -19,3 +19,7 @@ insert into tb_movimentacao (placa,data_entrada,data_saida,valor)  values  ('JJJ
 insert into tb_movimentacao (placa,data_entrada,data_saida,valor)  values  ('LLL-0000', curdate(), date_add(curdate(),INTERVAL 4 HOUR), 70);
 
 insert into tb_status_vagas(id,ocupadas) values (1,35);
+
+SELECT * FROM tb_movimentacao tm;
+
+SELECT * FROM tb_status_vagas tsv;
