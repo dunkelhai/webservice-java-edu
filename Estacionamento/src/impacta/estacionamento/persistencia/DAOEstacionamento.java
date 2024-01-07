@@ -73,9 +73,9 @@ public class DAOEstacionamento {
 				double faturamento = result.getDouble(1);
 				return faturamento;
 			}
+
 		} catch (SQLException e) {
 			e.printStackTrace();
-			System.out.println(e.getMessage().toLowerCase());
 		} finally {
 			closeConnection(conexao);
 		}
