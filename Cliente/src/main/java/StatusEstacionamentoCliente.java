@@ -121,7 +121,7 @@ public class StatusEstacionamentoCliente extends JFrame {
 
 	private StatusEstacionamentoService carregarServico() throws MalformedURLException{
 		StatusEstacionamentoService service = null;
-		URL url = new URL("http://127.1.1.0:8888/status?WSDL");
+		URL url = new URL("http://127.0.0.1:8888/status?WSDL");
 		QName qname = new QName("http://integracao.estacionamento.com/", "StatusEstacionamentoServiceImplService");
 
 		try {
