@@ -46,6 +46,7 @@ public class DAOEstacionamento {
 		Connection con = null;
 		try {
 			con = DriverManager.getConnection(url, usuario, senha);
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
