@@ -113,6 +113,12 @@ public class StatusEstacionamentoCliente extends JFrame {
 		panel_5.add(lblDisponibilidade, BorderLayout.CENTER);
 	}
 
+	private void carregarLabels(StatusBean bean) {
+		this.lblDisponibilidade.setText(String.valueOf(bean.getVagasLivres()));
+		this.lblFaturamento.setText(String.valueOf(bean.getFaturamentoDia()));
+		this.lblOcupacao.setText(String.valueOf(bean.getVagasOcupadas()));
+	}
+
 	private StatusEstacionamentoService carregarServico() throws MalformedURLException{
 		StatusEstacionamentoService service = null;
 		URL url = new URL("http://127.1.1.0:8888/status?WSDL");
