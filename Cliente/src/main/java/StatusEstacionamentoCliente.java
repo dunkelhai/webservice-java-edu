@@ -18,7 +18,7 @@ public class StatusEstacionamentoCliente extends JFrame {
 
 	private JLabel slblFaturamento = new JLabel("Faturamento");
 	private JLabel slblDisponibilidade = new JLabel("Disponibilidade");
-	private JLabel slblOcupacao = new JLabel("Ocupa\u00E7\u00E3o");
+	private JLabel slblOcupacao = new JLabel("Ocupação");
 
 	private JLabel lblFaturamento = new JLabel("---");
 	private JLabel lblDisponibilidade = new JLabel("---");
@@ -47,7 +47,7 @@ public class StatusEstacionamentoCliente extends JFrame {
 		btnAtualizar.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btnAtualizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				// TODO atualizar o status chamando o servi�o
+				// TODO atualizar o status chamando o servi?o
 			}
 		});
 		panel.add(btnAtualizar, BorderLayout.NORTH);
