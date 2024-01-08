@@ -15,7 +15,6 @@ public class StatusEstacionamentoServiceImpl implements StatusEstacionamentoServ
 
     public static void main(String[] args) {
         try {
-            System.setProperty("javax.xml.ws.spi.Provider", "com.sun.xml.ws.spi.ProviderImpl");
             Endpoint.publish("http://127.0.0.1:8888/status?WSDL", new StatusEstacionamentoServiceImpl());
             System.out.println("Serviço iniciado");
         } catch (Exception e){
