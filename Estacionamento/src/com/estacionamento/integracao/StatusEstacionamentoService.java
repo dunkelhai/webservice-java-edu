@@ -1,6 +1,4 @@
-package impacta.estacionamento.integracao;
-
-import impacta.estacionamento.integracao.StatusBean;
+package com.estacionamento.integracao;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

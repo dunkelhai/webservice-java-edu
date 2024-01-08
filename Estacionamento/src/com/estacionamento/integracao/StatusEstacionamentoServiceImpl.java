@@ -1,10 +1,10 @@
-package impacta.estacionamento.integracao;
+package com.estacionamento.integracao;
 
-import impacta.estacionamento.controle.EstacionamentoController;
+import com.estacionamento.controle.EstacionamentoController;
 
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
-@WebService(endpointInterface = "impacta.estacionamento.integracao.StatusEstacionamentoService")
+@WebService(endpointInterface = "com.estacionamento.integracao.StatusEstacionamentoService")
 public class StatusEstacionamentoServiceImpl implements StatusEstacionamentoService{
 
     @Override

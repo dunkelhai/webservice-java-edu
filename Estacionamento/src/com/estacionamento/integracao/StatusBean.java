@@ -1,4 +1,4 @@
-package impacta.estacionamento.integracao;
+package com.estacionamento.integracao;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlElement;
