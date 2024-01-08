@@ -1,7 +1,7 @@
 package impacta.estacionamento.integracao;
 
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlElement;
 
 @XmlRootElement
 public class StatusBean {
