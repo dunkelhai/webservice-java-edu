@@ -47,7 +47,7 @@ public class StatusEstacionamentoCliente extends JFrame {
 		btnAtualizar.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btnAtualizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				// TODO atualizar o status chamando o servi?o
+				// TODO atualizar o status chamando o serviço
 			}
 		});
 		panel.add(btnAtualizar, BorderLayout.NORTH);
