@@ -14,6 +14,10 @@ public class StatusEstacionamentoServiceImpl implements StatusEstacionamentoServ
     }
 
     public static void main(String[] args) {
-        Endpoint.publish("http://127.0.0.1:8888/status?WSDL", new StatusEstacionamentoServiceImpl());
+        try {
+            Endpoint.publish("http://127.0.0.1:8888/status?WSDL", new StatusEstacionamentoServiceImpl());
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
