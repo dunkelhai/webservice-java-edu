@@ -66,7 +66,6 @@ public class StatusEstacionamentoCliente extends JFrame {
 			}
 		});
 		panel.add(btnAtualizar, BorderLayout.NORTH);
-
 		JPanel panel_1 = new JPanel();
 		getContentPane().add(panel_1, BorderLayout.CENTER);
 		panel_1.setLayout(new GridLayout(1, 3, 0, 0));
@@ -118,7 +117,6 @@ public class StatusEstacionamentoCliente extends JFrame {
 		this.lblFaturamento.setText(String.valueOf(bean.getFaturamentoDia()));
 		this.lblOcupacao.setText(String.valueOf(bean.getVagasOcupadas()));
 	}
-
 	private StatusEstacionamentoService carregarServico() throws MalformedURLException{
 		StatusEstacionamentoService service = null;
 		URL url = new URL("http://127.0.0.1:8888/status?WSDL");
@@ -130,7 +128,6 @@ public class StatusEstacionamentoCliente extends JFrame {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		return service;
 	}
 }
